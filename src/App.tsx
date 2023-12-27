@@ -1,4 +1,3 @@
-import Square from "./Square";
 import Squares from "./Squares";
 import "./styles.css";
 

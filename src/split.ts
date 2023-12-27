@@ -4,7 +4,7 @@ function lastIndexOfPossibleCharacters(
   start?: number
 ): number | null {
   start = start || s.length - 1;
-  for (var i = start; i >= 0; i--) {
+  for (let i = start; i >= 0; i--) {
     if (possibleCharacters.includes(s[i])) {
       // SUCCESS: found character from possibleCharacters in s
       return i;
@@ -49,7 +49,7 @@ export function splitLines(s: string, length = 10) {
   let first,
     rest = s;
   do {
-    ({ first, rest } = split(rest));
+    ({ first, rest } = split(rest, length));
     lines.push(first);
   } while (rest.length > 0);
 
